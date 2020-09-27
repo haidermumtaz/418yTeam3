@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.logo span{
+    color: yellow;
+}
+
+#icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    line-height: 80px;
+    position: absolute;
+}
+
+nav{
+    font-family: 'Montserrat';
+    background: #2c3e50;
+    height: 80px;
+    width: 100%;
+    border-bottom: 3px solid yellow;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{ 
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+a.active, a.hover{
+    background: #1b9bff;
+    transition: .8s ;
+    padding: 4px;
+    color: yellow;
+}
+
+
+.hamburger-menu{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{ 
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 625px){
+    .hamburger-menu{
+        display: block;
+    }
+    .showMenu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    .hideMenu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+}
