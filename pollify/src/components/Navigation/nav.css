@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    color: white;
 }
 
 .logo span{
@@ -26,7 +27,7 @@ nav{
     border-bottom: 3px solid yellow;
 }
 
-label.logo{
+.logo{
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -42,20 +43,21 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{ 
+    margin: 0 6px;
     color: white;
     font-size: 17px;
     text-transform: uppercase;
 }
 
-a.active, a.hover{
+.active{
     background: #1b9bff;
     transition: .8s ;
     padding: 4px;
     color: yellow;
+}
+
+nav ul li a:hover{
+    color: #c5d300;
 }
 
 
@@ -70,11 +72,11 @@ a.active, a.hover{
 }
 
 @media (max-width: 952px){
-    label.logo{
+    .logo{
         font-size: 30px;
         padding-left: 50px;
     }
-    nav ul li a{ 
+    nav ul a{ 
         font-size: 16px;
     }
 }
@@ -109,6 +111,7 @@ a.active, a.hover{
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        
     }
     nav ul li a{
         font-size: 20px;
