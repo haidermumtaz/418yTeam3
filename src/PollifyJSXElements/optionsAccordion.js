@@ -9,8 +9,8 @@ export default function optionsAccordion(){
     return(
         <Accordion style={{paddingBottom: '20px'}}>
             <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
-                    <h3>View advanced settings: </h3>
+                <Accordion.Toggle as={Card.Header} style={{textAlign: 'center'}} eventKey="0">
+                    <h3>View advanced settings</h3>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>

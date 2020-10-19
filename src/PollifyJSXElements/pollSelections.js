@@ -34,7 +34,7 @@ export default function PollSelections(){
             <br/>
             
             { 
-            moreOptions == 1 ? 
+            moreOptions === 1 ? 
             <div>
                 <Form.Control type="text" placeholder="Enter option here!"></Form.Control>
                 <br/>
@@ -42,9 +42,9 @@ export default function PollSelections(){
                 <br/>
                 <Form.Control type="text" placeholder="Enter option here!"></Form.Control>
                 <br/>
-                <Button onClick={addOptions}> Need more options?</Button>
+                <Button onClick={addOptions} block> Need more options?</Button>
             </div> : 
-            <div>{ moreOptions == 2 ? 
+            <div>{ moreOptions === 2 ? 
                 <div>
                     <Form.Control type="text" placeholder="Enter option here!"></Form.Control>
                     <br/>
@@ -59,7 +59,7 @@ export default function PollSelections(){
                     <Form.Control type="text" placeholder="Enter option here!"></Form.Control>
                     <br/>
                 </div> : 
-                <Button onClick={addOptions}> Need more options?</Button>}
+                <Button onClick={addOptions} block> Need more options?</Button>}
             </div>
             }                   
         </Form.Group>

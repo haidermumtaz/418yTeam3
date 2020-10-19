@@ -10,6 +10,8 @@ import PollSelections from '../PollifyJSXElements/pollSelections';
 
 export default function PollCreation(){
 
+
+
     return(
         <Container fluid>
             <Row>
@@ -24,17 +26,16 @@ export default function PollCreation(){
                         <Card.Body style={{backgroundColor: '#00FFFF'}}>
                             <PollSelections/>
                             <hr/>
-                            <h3>Settings: </h3>
-                            <Form.Group controlId="formBasicCheckbox">
-                                <Form.Check style={{fontSize: '20px'}} type="checkbox" id="autoEndVotingCheck" label="&emsp; Automatically End Voting" />
-                            </Form.Group>
-                            <Form.Group controlId="formBasicCheckbox">
-                                <Form.Check style={{fontSize: '20px'}} type="checkbox" id="multipleSelectCheck" label="&emsp; Allow multiple selections" />
-                            </Form.Group>
-                            <Form.Group style={{fontSize: '20px'}}>
-                                <span > Poll availability: &emsp; </span>
+                            <h3 style={{textAlign: 'center'}}> Settings: </h3>
+                            <Form.Group controlId="formBasicCheckbox" style={{fontSize: '20px', textAlign: 'center'}}>
+                                <Form.Check inline type="checkbox" id="autoEndVotingCheck" label="&nbsp; Automatically End Voting &emsp;" />
+                                <Button>&#10068; </Button> &emsp;
+                                <Form.Check inline type="checkbox" id="multipleSelectCheck" label="&nbsp; Allow multiple selections &emsp;" />
+                                <Button>&#10068; </Button> &emsp;
+                                <span> Poll availability: &nbsp; </span>
                                 <Form.Check inline defaultChecked type={'radio'} label="Public" id="public" name="publicPrivateToggle"></Form.Check>
-                                <Form.Check inline type={'radio'} label="Private" id="private" name="publicPrivateToggle"></Form.Check>
+                                <Form.Check inline type={'radio'} label="Private" id="private" name="publicPrivateToggle"></Form.Check> &nbsp;
+                                <Button>&#10068; </Button> &emsp;
                             </Form.Group>
                             <OptionsAccordion/>
                             <Button style={{fontSize: '34px', paddingTop: '20px', paddingBottom: '20px', paddingRight: '40px', paddingLeft: '40px'}} block>Create Poll</Button>
