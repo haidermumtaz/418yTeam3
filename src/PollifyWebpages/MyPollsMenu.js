@@ -12,10 +12,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function MyPollsMenu(){
     //Mock poll data for Sprint 1 demo:
     const polls = [
-    {votes: 10, postDate: '12/21/2018', closeDate: '12/24/2018', favorited: true, title:'Dinner Selection', closed: false},
-    {votes: 0, postDate: '01/27/1998', closeDate: 'null', favorited: false, title:'Game night games', closed: false},
-    {votes: 4, postDate: '08/12/2019', closeDate: '08/20/2019', favorited: true, title:'Best Meeting Time', closed: true},
-    {votes: 121, postDate: '09/28/2020', closeDate: '11/20/2020', favorited: false, title:'Favorite Color', closed: false}
+        {votes: 10, postDate: '12/21/2018', closeDate: '12/24/2018', favorited: true, title:'Dinner Selection', closed: false},
+        {votes: 0, postDate: '01/27/1998', closeDate: 'null', favorited: false, title:'Game night games', closed: false},
+        {votes: 4, postDate: '08/12/2019', closeDate: '08/20/2019', favorited: true, title:'Best Meeting Time', closed: true},
+        {votes: 121, postDate: '09/28/2020', closeDate: '11/20/2020', favorited: false, title:'Favorite Color', closed: false}
     ];
 
 
@@ -27,7 +27,7 @@ export default function MyPollsMenu(){
             
         <Container fluid>
             <Row >
-                <Col lg={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} sm={12} xs={12}>
+                <Col lg={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} sm={12} xs={12} style={{paddingBottom: '20px'}}>
                     <Card style={{height: '1100px'}}>
                         <Card.Header style={{backgroundColor: '#243240'}}>
                             <Col>
