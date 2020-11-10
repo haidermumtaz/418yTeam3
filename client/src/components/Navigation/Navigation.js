@@ -19,7 +19,8 @@ export default class Navigation extends React.Component{
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link eventKey={2} href="/login">Login</Nav.Link>
-                        <Nav.Link eventKey={3} href="/polls">Create Poll</Nav.Link>
+                        <Nav.Link eventKey={3} href="/mypolls">My Polls</Nav.Link>
+                        <Nav.Link eventKey={4} href="/createpoll">Create Poll</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>

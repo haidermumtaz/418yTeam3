@@ -26,7 +26,7 @@ export default function MyPollsMenu(){
         
             
         <Container fluid>
-            <Row >
+            <Row style={{backgroundImage: `url("https://wallpaperaccess.com/full/1682999.jpg")`}}>
                 <Col lg={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} sm={12} xs={12}>
                     <Card style={{height: '1100px'}}>
                         <Card.Header style={{backgroundColor: '#243240'}}>

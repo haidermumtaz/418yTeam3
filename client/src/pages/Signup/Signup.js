@@ -1,12 +1,10 @@
 import React from 'react';
-import NavBar from '../../components/Navigation/Navbar'
 import Footer from '../../components/Footer/Footer'
 import './signup.css';
 
 export default function Signup(){
     return(
         <div className = 'registrationpage'>
-            <NavBar />
             <div class="signupbox">
                 <div className = 'signup'>
                     <h1>SIGN UP</h1>

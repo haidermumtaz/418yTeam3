@@ -1,12 +1,12 @@
 import React from 'react';
-import NavBar from '../../components/Navigation/Navbar'
+import NavBar from '../../components/Navigation/Navigation'
 import Footer from '../../components/Footer/Footer'
 import './login.css';
 
 export default function Login(){
     return(
         <div className = 'loginpage'>
-            <NavBar />
+            {/* <NavBar /> */}
             <div className = "loginbox">
                 <div className = 'login'>
                     <h1>LOGIN</h1>

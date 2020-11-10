@@ -48,7 +48,7 @@ export default function PollCreation(){
 
     return(
         <Container fluid>
-            <Row>
+            <Row style={{backgroundImage: `url("https://wallpaperaccess.com/full/1682999.jpg")`}}>
                 <Col lg={{span: 8, offset: 2}} style={{paddingTop: '20px', paddingBottom: '20px'}} >
                     
                     <Card >

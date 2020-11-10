@@ -1,12 +1,12 @@
 import React from 'react';
 import './home.css';
-import NavBar from '../../components/Navigation/Navbar'
+import NavBar from '../../components/Navigation/Navigation'
 import Footer from '../../components/Footer/Footer'
 
 export default function Home(){
     return(
         <div className = "home-page">
-            <NavBar />
+            {/* <NavBar /> */}
             <section class="home-intro">
                 <div class="welcome">
                     <h1>Welcome to Pollify!</h1>
