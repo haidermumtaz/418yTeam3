@@ -7,6 +7,8 @@ import PollifyNavbar from './components/Navigation/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Poll from './components/poll';
+
 import {Route, Link, BrowserRouter as PollifyRouter} from 'react-router-dom';
 
 export default function PollifyApp(){
@@ -20,6 +22,9 @@ export default function PollifyApp(){
                     </Route>
                     <Route path="/createpoll">
                         <PollCreation/>
+                    </Route>
+                    <Route path="/poll">
+                        <Poll/>
                     </Route>
                     <Footer/>
                 </Row>
