@@ -5,6 +5,7 @@ import Login from './pages/Login/Login';
 import Signup from "./pages/Signup/Signup";
 import CreatePoll from "./pages/PollCreation";
 import MyPollsMenu from './pages/MyPollsMenu';
+import PollInterface from './pages/PollInterface';
 
 export default class App extends Component {
   render(){
@@ -15,6 +16,7 @@ export default class App extends Component {
         <Route path = "/register" component={Signup}/>
         <Route path = "/createPoll" component={CreatePoll}/>
         <Route path = "/myPolls" component={MyPollsMenu}/>
+        <Route path = "/poll" component={PollInterface}/>
       </BrowserRouter>
     );
   }
