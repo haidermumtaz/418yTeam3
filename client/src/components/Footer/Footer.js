@@ -1,3 +1,5 @@
+/* Shaniya Malcolm's Pollify Footer JSX Element */
+
 import React from 'react';
 import './footer.css';
 
