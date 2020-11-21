@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../../components/Navigation/Navbar'
+import NavBar from '../../components/Navigation/Navigation'
 import Footer from '../../components/Footer/Footer'
 import './signup.css';
 

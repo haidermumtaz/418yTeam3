@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import NavBar from '../../components/Navigation/Navbar'
+import NavBar from '../../components/Navigation/Navigation'
 import Footer from '../../components/Footer/Footer'
 
 export default function Home(){

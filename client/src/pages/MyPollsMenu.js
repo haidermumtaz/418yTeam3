@@ -7,7 +7,8 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import PollInfo from '../components/PollInfo';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from '../components/Navigation/Navigation';
+import Footer from '../components/Footer/Footer'
 
 export default function MyPollsMenu(){
     //Mock poll data for Sprint 1 demo:
@@ -23,8 +24,8 @@ export default function MyPollsMenu(){
 
     //TODO: fix arbitrary card height
     return(
-        
-            
+        <div>
+        <NavBar></NavBar>
         <Container fluid>
             <Row >
                 <Col lg={{ span: 10, offset: 1 }} md={{ span: 10, offset: 1 }} sm={12} xs={12}>
@@ -51,7 +52,7 @@ export default function MyPollsMenu(){
                             {polls.map(poll => (<PollInfo poll={poll}></PollInfo>))}
 
                             <Card.Body className='text-center' bg='light'>
-                                <h2 style={{color: 'gray'}}>That's all of your polls, click <u><a href="#">here</a></u> to make more!</h2>
+                                <h2 style={{color: 'gray'}}>That's all of your polls, click <u><a href="/createPoll">here</a></u> to make more!</h2>
                             </Card.Body>
                         </Card.Body>    
                     </Card>
@@ -59,7 +60,8 @@ export default function MyPollsMenu(){
                 </Col>
             </Row>
         </Container>
-        
+        <Footer/>
+        </div>
     )
 
 }
