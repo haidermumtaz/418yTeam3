@@ -1,4 +1,6 @@
 // Page design written by Shaniya Malcolm
+// Backend Support written by Jordan Le | Reference: https://github.com/axios/axios#example | https://reactjs.org/docs/forms.html
+
 import React from 'react';
 import Footer from '../../components/Footer/Footer'
 import './signup.css';

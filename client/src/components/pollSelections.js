@@ -5,6 +5,7 @@
     This page uses React-Bootstrap components, documentation found at: https://react-bootstrap.github.io/
     This page also uses state hooks, made referencing React documentation: https://reactjs.org/docs/hooks-state.html
     This page uses Axios library to handle a POST request for the polls information: https://github.com/axios/axios#example
+    This page uses methodologies from https://reactjs.org/docs/forms.html for handleSubmit and handleChange
 */
 
 import React from 'react';

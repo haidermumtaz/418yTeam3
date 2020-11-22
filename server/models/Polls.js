@@ -1,3 +1,6 @@
+// Made by Jordan Le | Refernce: https://mongoosejs.com/docs/tutorials/virtuals.html
+
+// Needed for Schema and mongoose
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
