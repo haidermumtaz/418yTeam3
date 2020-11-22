@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import PollInfo from '../components/PollInfo';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function MyPollsMenu(){
     //Mock poll data for Sprint 1 demo:

@@ -1,7 +1,8 @@
 /*
   Zachary Miller
   This page is a poll creation interface with some basic options
-  This pages uses react-bootstrap components, library found at: https://react-bootstrap.github.io/ 
+  This pages uses react-bootstrap components, library found at: https://react-bootstrap.github.io/
+  This page also contains state hooks, made referencing react documentation: https://reactjs.org/docs/hooks-state.html
 */
 import React from 'react';
 import Card from 'react-bootstrap/Card';
@@ -16,7 +17,7 @@ import PollSelections from '../components/pollSelections';
 
 export default function PollCreation(){
 
-    const [EndVoteModalStatus, SetEndVoteModalStatus] = React.useState(0);  //initialize state hook for opening and closing modals, reference: https://reactjs.org/docs/hooks-state.html
+    const [EndVoteModalStatus, SetEndVoteModalStatus] = React.useState(0);  //create state hook for opening and closing modals
     const [MultSelectModalStatus, SetMultSelectModalStatus] = React.useState(0);
     const [PublicPrivateModalStatus, SetPublicPrivateModalStatus] = React.useState(0);
     
@@ -101,7 +102,7 @@ export default function PollCreation(){
                                 </Modal>
                             </Form.Group>
                             <OptionsAccordion/>
-                            
+                            <Button style={{fontSize: '34px', paddingTop: '20px', paddingBottom: '20px', paddingRight: '40px', paddingLeft: '40px'}} block>Create Poll</Button>
                         </Card.Body>
                     </Card>
                 </Col>

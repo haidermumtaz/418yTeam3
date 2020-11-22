@@ -37,7 +37,7 @@ export default function PollInfo(props){
                         <Card.Body>{/* header and body renders poll information passed by props (title, post date, close date, votes on poll) */}
                             <Row> 
                                 <Col>
-                                <h4>Total Votes: {props.poll.votes} &emsp; </h4>{/* Ternary operator renders close date, if there is one, or that the poll is closed */}
+                                <h4>Total Votes: {props.poll.votes} &emsp; </h4>{/* Ternary operator renders close date, if there is one*/}
                                 {props.poll.closeDate !== 'null' ?
                                      <h4> Closes: {props.poll.closeDate}</h4> :
                                     <div></div>
