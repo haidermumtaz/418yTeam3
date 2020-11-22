@@ -1,4 +1,8 @@
-const JwtStrategy = require("passport-jwt").Strategy;
+// Robert McIlrath
+// Code by Rishi Prasad from tutorial: https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+
+// Configures Passport for authentication
+
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
 const User = mongoose.model("users");
