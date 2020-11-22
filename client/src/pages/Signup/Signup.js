@@ -1,25 +1,54 @@
 import React from 'react';
+import NavBar from '../../components/Navigation/Navbar'
 import Footer from '../../components/Footer/Footer'
 import './signup.css';
 
+var axios = require('axios');
+
 export default function Signup(){
+    const [state, setState] = React.useState({ email: "", username: "", password: "", password2: "" });
+
+    const handleSubmit = e => {
+        e.preventDefault();
+            
+        axios.post('http://localhost:5000/api/users/register', state)
+        .then(function (response) {
+            console.log(JSON.stringify(response.data));
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+
+    const handleChange = e => {
+        setState({
+          ...state,
+          [e.target.name]: e.target.value
+        });
+    };
+
+
+
+    
+
     return(
         <div className = 'registrationpage'>
+            <NavBar />
             <div class="signupbox">
                 <div className = 'signup'>
                     <h1>SIGN UP</h1>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <p>Email</p>
-                    <input type="text" name = "" placeholder = "Enter Email"/>
+                    <input type="text" name="email" placeholder = "Enter Email" onChange={handleChange}/>
                     <p>Username</p>
-                    <input type="text" name = "" placeholder = "Enter Username"/>
+                    <input type="text" name="username" placeholder = "Enter Username" onChange={handleChange}/>
                     <p>Password</p>
-                    <input type = "password" name = "" placeholder="Enter Password"/>
+                    <input type = "password" name="password" placeholder="Enter Password" onChange={handleChange}/>
                     <p>Confirm Password</p>
-                    <input type = "password" name = "" placeholder="Re-enter Password"/>
+                    <input type = "password" name="password2" placeholder="Re-enter Password" onChange={handleChange}/>
                     <p className = 'errorMessage'>ERROR: Passwords do not match. Try typing again.</p>
-                    <input type = "submit" name="" value="Register"/>
+                    <input type="submit" value="Register"/>
                     <a href="/login">Already have an account? Log in here!</a>
                 </form>
             </div>
