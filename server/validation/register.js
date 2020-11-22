@@ -1,4 +1,7 @@
-//Rob McIlrath + Bianca Lavaud
+// Robert McIlrath
+// References code by Rishi Prasad from tutorial: https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+// Most modifications to code were to add username concept, other modifications were minor
+
 const Validator = require("validator");
 const isEmpty = require("is-empty");
 
