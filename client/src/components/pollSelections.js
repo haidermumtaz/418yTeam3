@@ -81,7 +81,7 @@ export default function PollSelections(){
                 <br/>
                 <Form.Control type="text" name = "field6" placeholder="Enter option here!" onChange={handleChange}></Form.Control>
                 <br/>
-                <Button onClick={addOptions} block> Need more options?</Button>{/* (Zachary) Button calls function to render 3 more options, button styling for this page referenced : https://react-bootstrap.netlify.app/components/buttons/ */}
+                <Button onClick={addOptions} block> Need even more options?</Button>{/* (Zachary) Button calls function to render 3 more options, button styling for this page referenced : https://react-bootstrap.netlify.app/components/buttons/ */}
             </div> : 
             <div>{ moreOptions === 2 ? 
                 <div>
@@ -98,10 +98,10 @@ export default function PollSelections(){
                     <Form.Control type="text" name = "field9" placeholder="Enter option here!" onChange={handleChange}></Form.Control>
                     <br/>
                 </div> : 
-                <Button onClick={addOptions} block> Need even more options?</Button>}
+                <Button onClick={addOptions} block> Need more options?</Button>}
             </div>
             }
-        &emsp;{/* Below is form submission button, calls axios API POST request (Jordan), styling by Zachary */}
+        &emsp;{/* Below is form submission button, calls axios API POST request for above field's data (Jordan), styling by Zachary */}
         <Button onClick={handleSubmit} style={{fontSize: '34px', paddingTop: '20px', paddingBottom: '20px', paddingRight: '40px', paddingLeft: '40px'}} block>Create Poll</Button>
         </Form.Group>
     )

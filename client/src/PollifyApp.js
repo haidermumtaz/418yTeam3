@@ -1,3 +1,8 @@
+/* Zachary Miller
+   Main app content rendered using React Router library to display certain pages 
+   based on given URL route, documentation referenced: https://reactrouter.com/web/guides/quick-start
+
+*/
 import React from 'react';
 import MyPollsMenu from './pages/MyPollsMenu';
 import PollCreation from './pages/PollCreation';
@@ -14,8 +19,8 @@ export default function PollifyApp(){
     return (
         <PollifyRouter>
             <div>
-                <PollifyNavbar/>
-                <Route path="/" exact='true'>
+                <PollifyNavbar/>{/* All pages are wrapped with Shaniya's Navbar and footer*/}
+                <Route path="/" exact='true'>{/* exact attribute specifies that path string must be exact, necessary as all routes begin with '/' */}
                     <Home/>
                 </Route>
                 <Route path="/login">
