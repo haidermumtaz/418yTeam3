@@ -1,9 +1,13 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Haider Mumtaz       Default Poll Page               Used React Poll Library: https://github.com/viniciusmeneses/react-polls#readme  //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import React, { Component } from 'react';
 import Poll from 'react-polls';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+//Creating Poll Component
 const pollQuestion = 'What is your favorite color';
 const pollAnswers = [
     {option: 'Red', votes: 0},
@@ -12,6 +16,7 @@ const pollAnswers = [
     {option: 'Yellow', votes: 0}
 ]
 
+//Styling Poll with custom props
 const pollStyle ={
     theme: 'blue',
     questionColor: '#4F70D6',
@@ -26,6 +31,7 @@ class PollInterface extends Component{
         pollAnswers: [...pollAnswers]
     }
 
+    //how the poll will handle vote
     handleVote = voteAnswer => {
         const { pollAnswers } = this.state
         const newPollAnswers = pollAnswers.map(answer => {
