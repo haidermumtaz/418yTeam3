@@ -1,3 +1,4 @@
+//Written by Shaniya Malcolm
 import React from 'react';
 import './home.css';
 import Footer from '../../components/Footer/Footer';
