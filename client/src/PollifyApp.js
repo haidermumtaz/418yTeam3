@@ -19,7 +19,7 @@ export default function PollifyApp(){
     return (
         <PollifyRouter>
             <div>
-                <PollifyNavbar/>{/* All pages are wrapped with Shaniya's Navbar and footer*/}
+                <PollifyNavbar/>{/* All pages are wrapped with Shaniya's Navbar and footer */}
                 <Route path="/" exact='true'>{/* exact attribute specifies that path string must be exact, necessary as all routes begin with '/' */}
                     <Home/>
                 </Route>

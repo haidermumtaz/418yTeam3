@@ -2,8 +2,7 @@
 // Backend Support written by Jordan Le | Reference: https://github.com/axios/axios#example | https://reactjs.org/docs/forms.html
 
 import React from 'react';
-import NavBar from '../../components/Navigation/Navigation'
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer';
 import './login.css';
 var axios = require('axios');
 
@@ -11,7 +10,7 @@ export default function Login(){
     // State variables needed for login process
     const [state, setState] = React.useState({ email: "", password: ""});
 
-    // handSubmit function used to send form data to database
+    // handleSubmit function used to send form data to database
     const handleSubmit = e => {
         e.preventDefault();
             
@@ -25,7 +24,7 @@ export default function Login(){
         });
     }
 
-    // handChange function used to control the state variables inside the form
+    // handleChange function used to control the state variables inside the form
     const handleChange = e => {
         setState({
           ...state,

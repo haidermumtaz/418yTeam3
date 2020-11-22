@@ -33,7 +33,7 @@ export default function PollInfo(props){
         <div>{/* ternary operator checking deleted state, renders that a poll was deleted or poll's info card based on this */}
             {isDeleted ? 
                 <h2> {props.poll.title} was deleted. </h2> :  
-                <Card style={{backgroundColor: '#00FFFF'}}>
+                <Card style={{backgroundColor: '#00FFFF'}}>{/* React-Bootstrap Card documentation referenced for card design: https://react-bootstrap.netlify.app/components/cards/ */}
                     <Card.Header style={{backgroundColor: '#243240'}}><h3 style={{color: 'white'}}><a>{props.poll.title}</a> - Posted: {props.poll.postDate} </h3></Card.Header>
                         <Card.Body>{/* header and body renders poll information passed by props (title, post date, close date, votes on poll) */}
                             <Row> 

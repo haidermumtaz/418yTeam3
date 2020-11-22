@@ -1,5 +1,5 @@
 /* Zachary Miller
-   Boilerplate index.js file created by npm react installer
+   Boilerplate index.js file created by npm React installer
    renders the app content
 */
 import React from 'react';
