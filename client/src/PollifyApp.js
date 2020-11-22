@@ -6,8 +6,9 @@ import PollifyNavbar from './components/Navigation/Navigation';
 import Home from './pages/Landing_Page/Home';
 import Login from './pages/Login/Login';
 import Signup from "./pages/Signup/Signup";
-
+import PollInterface from './pages/PollInterface';
 import {Route,  BrowserRouter as PollifyRouter} from 'react-router-dom';
+
 
 export default function PollifyApp(){
     return (
@@ -28,6 +29,9 @@ export default function PollifyApp(){
                 </Route>
                 <Route path="/createpoll">
                     <PollCreation/>
+                </Route>
+                <Route path="/poll">
+                    <PollInterface/>
                 </Route>
                 <Footer/>
             </div>
