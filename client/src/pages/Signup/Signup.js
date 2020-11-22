@@ -1,8 +1,6 @@
 import React from 'react';
-import NavBar from '../../components/Navigation/Navbar'
 import Footer from '../../components/Footer/Footer'
 import './signup.css';
-
 var axios = require('axios');
 
 export default function Signup(){
@@ -14,6 +12,7 @@ export default function Signup(){
         axios.post('http://localhost:5000/api/users/register', state)
         .then(function (response) {
             console.log(JSON.stringify(response.data));
+            window.location.href = "http://localhost:3000/login"
         })
         .catch(function (error) {
             console.log(error);
@@ -27,13 +26,8 @@ export default function Signup(){
         });
     };
 
-
-
-    
-
     return(
         <div className = 'registrationpage'>
-            <NavBar />
             <div class="signupbox">
                 <div className = 'signup'>
                     <h1>SIGN UP</h1>

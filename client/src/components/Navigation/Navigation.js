@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav} from 'react-bootstrap'
 
 export default class Navigation extends React.Component{
+    
 
      render(){
-
         return(
             <div>
                 <Navbar collapseOnSelect expand="sm" bg="#2c3e50" variant="dark">
