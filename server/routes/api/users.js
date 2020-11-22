@@ -1,3 +1,7 @@
+// Robert McIlrath
+// References code by Rishi Prasad from tutorial: https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+
+// Requirements
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
