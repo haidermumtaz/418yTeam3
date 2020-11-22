@@ -7,8 +7,11 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 
 const users = require("./routes/api/users");
+const polls = require("./routes/api/polls");
 var cors = require('cors')
 var app = express()
+
+// Needed or throws a network error. Middleware too
 app.use(cors())
 
 // Bodyparser middleware
@@ -37,6 +40,7 @@ require("./config/passport")(passport);
 
 //Routes
 app.use("/api/users", users);
+app.use("/api/polls", polls);
 
 const port = process.env.PORT || 5000; // process.env.port is Heroku's port if you choose to deploy the app there
 

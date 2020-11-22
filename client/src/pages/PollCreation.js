@@ -101,7 +101,7 @@ export default function PollCreation(){
                                 </Modal>
                             </Form.Group>
                             <OptionsAccordion/>
-                            <Button style={{fontSize: '34px', paddingTop: '20px', paddingBottom: '20px', paddingRight: '40px', paddingLeft: '40px'}} block>Create Poll</Button>
+                            
                         </Card.Body>
                     </Card>
                 </Col>

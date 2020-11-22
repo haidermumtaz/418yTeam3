@@ -5,21 +5,24 @@ import './login.css';
 var axios = require('axios');
 
 export default function Login(){
+    // State variables needed for login process
     const [state, setState] = React.useState({ email: "", password: ""});
 
+    // handSubmit function used to send form data to database
     const handleSubmit = e => {
         e.preventDefault();
             
-        axios.post('http://localhost:5000/api/users/login', state)
+        axios.post('/api/users/login', state)
         .then(function (response) {
             console.log(JSON.stringify(response.data));
-            //window.location.href = "http://localhost:3000/"
+            window.location.href = "http://localhost:3000/"
         })
         .catch(function (error) {
             console.log(error);
         });
     }
 
+    // handChange function used to control the state variables inside the form
     const handleChange = e => {
         setState({
           ...state,

@@ -4,12 +4,14 @@ import './signup.css';
 var axios = require('axios');
 
 export default function Signup(){
+    // State variables needed for login process
     const [state, setState] = React.useState({ email: "", username: "", password: "", password2: "" });
 
+    // handSubmit function used to send form data to database
     const handleSubmit = e => {
         e.preventDefault();
             
-        axios.post('http://localhost:5000/api/users/register', state)
+        axios.post('/api/users/register', state)
         .then(function (response) {
             console.log(JSON.stringify(response.data));
             window.location.href = "http://localhost:3000/login"
@@ -19,6 +21,7 @@ export default function Signup(){
         });
     }
 
+    // handChange function used to control the state variables inside the form
     const handleChange = e => {
         setState({
           ...state,
