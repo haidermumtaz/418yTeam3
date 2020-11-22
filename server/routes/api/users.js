@@ -1,5 +1,12 @@
 // Robert McIlrath
 // References code by Rishi Prasad from tutorial: https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
+// Most modifications to code were to require a unique username/ add username concept, other modifications were minor
+// I created the MongoDB database and collection for users, connected into POST requests for login/ register
+
+// This code defines API routes for registration and login
+// Register requires a correctly formatted unique email (X@Y.Z), a unique username, and a matching password 10 characters long entered twice 
+// Register hashes password before putting into database
+// Login requires an email with a password, email must be a user in the database, password must match hash in database
 
 // Requirements
 const express = require("express");
