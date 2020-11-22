@@ -1,31 +1,30 @@
-/*Zachary Miller
-  This page is a poll creation interface with some options
-  This pages uses react-bootstrap components
+/*
+  Zachary Miller
+  This page is a poll creation interface with some basic options
+  This pages uses react-bootstrap components, library found at: https://react-bootstrap.github.io/ 
 */
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import OptionsAccordion from '../components/optionsAccordion';
 import PollSelections from '../components/pollSelections';
-import {Link} from 'react-router-dom';
 
 export default function PollCreation(){
 
-    const [EndVoteModalStatus, SetEndVoteModalStatus] = React.useState(0);
+    const [EndVoteModalStatus, SetEndVoteModalStatus] = React.useState(0);  //initialize state hook for opening and closing modals, reference: https://reactjs.org/docs/hooks-state.html
     const [MultSelectModalStatus, SetMultSelectModalStatus] = React.useState(0);
     const [PublicPrivateModalStatus, SetPublicPrivateModalStatus] = React.useState(0);
     
-    function OpenEndVoteModal () {
+    function OpenEndVoteModal () { //opening modal toggles modal state to open (1)
         SetEndVoteModalStatus(1);
     }
 
-    function CloseEndVoteModal () {
+    function CloseEndVoteModal () { //closing modal toggles modal state back to 0 for next open call
         SetEndVoteModalStatus(0);
     }
 
@@ -48,7 +47,7 @@ export default function PollCreation(){
 
     return(
         <Container fluid>
-            <Row style={{backgroundImage: `url("https://wallpaperaccess.com/full/1682999.jpg")`}}>
+            <Row>
                 <Col lg={{span: 8, offset: 2}} style={{paddingTop: '20px', paddingBottom: '20px'}} >
                     
                     <Card >
