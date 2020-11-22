@@ -1,3 +1,4 @@
+//Page design written by Shaniya Malcolm
 import React from 'react';
 import NavBar from '../../components/Navigation/Navigation'
 import Footer from '../../components/Footer/Footer'
@@ -32,7 +33,6 @@ export default function Login(){
 
     return(
         <div className = 'loginpage'>
-            {/* <NavBar /> */}
             <div className = "loginbox">
                 <div className = 'login'>
                     <h1>LOGIN</h1>
