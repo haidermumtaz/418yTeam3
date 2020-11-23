@@ -8,7 +8,6 @@
 // Register hashes password before putting into database
 // Login requires an email with a password, email must be a user in the database, password must match hash in database
 
-// Requirements
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
