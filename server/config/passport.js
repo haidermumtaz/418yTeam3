@@ -1,7 +1,7 @@
 // Robert McIlrath
 // Code by Rishi Prasad from tutorial: https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
 
-// Configures Passport for authentication using java web token system
+// Configures Passport for authentication using json web token system
 
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
