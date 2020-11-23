@@ -3,6 +3,8 @@
 // Most modifications to code were to require a unique username/ add username concept, other modifications were minor
 // I created the MongoDB database and collection for users, connected into POST requests for login/ register
 
+// This page uses jwt; Source: https://jwt.io/
+
 // This code defines API routes for registration and login
 // Register requires a correctly formatted unique email (X@Y.Z), a unique username, and a matching password 10 characters long entered twice 
 // Register hashes password before putting into database
