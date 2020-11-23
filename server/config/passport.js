@@ -3,6 +3,7 @@
 
 // Configures Passport for authentication using json web token system
 // This page uses jwt; Source: https://jwt.io/
+// This page uses mongoose; Source: https://mongoosejs.com/
 
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
