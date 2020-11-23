@@ -3,6 +3,8 @@
 // References code by Rishi Prasad from tutorial: https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669
 // Most modifications to code were to require a unique username/ add username concept, other modifications were minor
 
+// This page uses mongoose js; Source: https://mongoosejs.com/
+
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
