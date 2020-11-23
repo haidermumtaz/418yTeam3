@@ -4,6 +4,8 @@
 // I created the MongoDB database and collection for users, connected into POST requests for login/ register
 
 // This page uses jwt; Source: https://jwt.io/
+// This page uses express js; Source: https://expressjs.com/
+// Thise page uses bcrypt; Source: https://www.npmjs.com/package/bcryptjs
 
 // This code defines API routes for registration and login
 // Register requires a correctly formatted unique email (X@Y.Z), a unique username, and a matching password 10 characters long entered twice 
